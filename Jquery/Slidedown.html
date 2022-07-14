@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slide Down</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                $("#f1").click(function(){
+                    $("#f2").slideDown("slow");
+                });
+            });
+        </script>
+        <style>
+            #f1,#f2{
+                padding: 5px;
+                text-align: center;
+                background-color: aqua;
+                border: 1px solid aquamarine;
+            }
+            #f2{
+                padding: 50px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <body>
+            <div id="f1">click to Slidedown panel</div>
+            <div id="f2">Hello Students!</div>
+        </body>
+    </body>
+</html>
